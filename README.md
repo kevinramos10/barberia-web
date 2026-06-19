@@ -34,14 +34,20 @@ Sitio web completo para una barbería moderna con sistema de reservas y panel de
 
 ## 📸 Capturas
 
-### Página Principal
-<!-- Agrega aquí tu captura -->
+### 🏠 Página Principal
+![Home 1](screenshots/home1.png)
+![Home 2](screenshots/home2.png)
+![Home 3](screenshots/home3.png)
+![Home 4](screenshots/home4.png)
 
-### Formulario de Reservas
-<!-- Agrega aquí tu captura -->
+### 📅 Formulario de Reservas
+![Reservas](screenshots/Reserva1.png)
 
-### Dashboard
-<!-- Agrega aquí tu captura -->
+### 🔐 Login Administrador
+![Login](screenshots/login1.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard1.png)
 
 ## ⚙️ ¿Cómo correrlo?
 
