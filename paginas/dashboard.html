@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard - Administrador</title>
+</head>
+<body>
+
+    <header id="dashHeader">
+        <img src="../img/logo.png" alt="Logo">
+        <h1>Panel de Reservas</h1>
+        <a href="login.html" id="btnSalir">🚪 Cerrar sesión</a>
+    </header>
+
+    <main id="dashMain">
+
+        <section id="dashFiltros">
+
+            <div class="filtroGrupo">
+                <label>Desde</label>
+                <input type="date" id="filtroFecha1">
+            </div>
+
+            <div class="filtroGrupo">
+                <label>Hasta</label>
+                <input type="date" id="filtroFecha2">
+            </div>
+
+            <div class="filtroGrupo">
+                <label>Barbero</label>
+                <select id="filtroBarbero">
+                    <option value="">Todos</option>
+                </select>
+            </div>
+
+            <button id="btnFiltrar">🔍 Filtrar</button>
+            <button id="btnLimpiar">🗑️ Limpiar</button>
+
+        </section>
+
+        <section id="dashResumen">
+
+            <div class="resCard">
+                <p>Total reservas hoy</p>
+                <h3 id="tReservas">0</h3>
+            </div>
+
+            <div class="resCard">
+                <p>Juan Pérez</p>
+                <h3 id="tReserva1">0</h3>
+            </div>
+
+            <div class="resCard">
+                <p>Carlos Ruiz</p>
+                <h3 id="tReserva2">0</h3>
+            </div>
+
+            <div class="resCard">
+                <p>Luis Torres</p>
+                <h3 id="tReserva3">0</h3>
+            </div>
+
+        </section>
+
+        <section id="dashTabla">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>DNI</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Celular</th>
+                        <th>Barbero</th>
+                        <th>Horario</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaBody">
+                    <tr id="sinDatos">
+                        <td colspan="7">No hay reservas para mostrar</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#resContenido {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 40px;
+    padding-bottom: 0px ;
+    width: 100%;
+    max-width: 500px;
+}
+
+#resTitulo {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: "Titan One";
+        color: white;
+        font-size: 28px;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-family: "Cinzel";
+        color: rgba(255,255,255,0.5);
+        font-size: 13px;
+    }
+}
+
+#resForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .resGrupo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        label {
+            font-family: "Cinzel";
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        input, select {
+            background-color: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 12px 15px;
+            color: white;
+            font-family: "Cinzel";
+            font-size: 14px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: rgba(255,255,255,0.6);
+        }
+
+        select option {
+            background-color: #1a1a2e;
+            color: white;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1); /* ← pone el icono del calendario en blanco */
+        }
+    }
+
+    #btnConfirmar {
+        margin-top: 10px;
+        padding: 15px;
+        background-color: transparent;
+        color: white;
+        font-family: "Titan One";
+        font-size: 18px;
+        border: 2px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #btnConfirmar:hover {
+        background-color: white;
+        color: #1a1a2e;
+    }
+}
+
+#volver{
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 16px;
+    text-align: end;
+    padding: 20px 15px;
+    cursor: pointer;
+    font-family: "Cinzel";
+    transition: all 0.3s ease;
+}
+
+#volver:hover{
+    color: white;
+}
+
+.error {
+    color: #ff4444;
+    font-size: 12px;
+    font-family: "Cinzel";
+    margin-top: 4px;
+    min-height: 16px; /* ← reserva espacio para que no mueva el layout */
+}

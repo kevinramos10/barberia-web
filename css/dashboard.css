@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    font-family: "Cinzel";
+}
+
+#dashHeader {
+    background-color: #12121f;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        height: 60px;
+    }
+
+    h1 {
+        font-family: "Titan One";
+        color: white;
+        font-size: 24px;
+        font-weight: 100;
+    }
+
+    #btnSalir {
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        font-family: "Cinzel";
+        font-size: 14px;
+        border: 1px solid rgba(255,255,255,0.2);
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    #btnSalir:hover {
+        background-color: rgba(255,255,255,0.1);
+        color: white;
+    }
+}
+
+#dashMain {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#dashFiltros {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .filtroGrupo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        label {
+            color: rgba(255,255,255,0.6);
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        input, select {
+            background-color: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 10px 15px;
+            color: white;
+            font-family: "Cinzel";
+            font-size: 13px;
+            outline: none;
+            transition: border 0.3s ease;
+            min-width: 160px;
+        }
+
+        input:focus, select:focus {
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        select option {
+            background-color: #1a1a2e;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-family: "Cinzel";
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        height: 40px;
+    }
+
+    #btnFiltrar {
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    #btnFiltrar:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    #btnLimpiar {
+        background-color: transparent;
+        color: rgba(255,255,255,0.5);
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    #btnLimpiar:hover {
+        color: white;
+        border-color: rgba(255,255,255,0.4);
+    }
+}
+
+#dashResumen {
+    display: flex;
+    gap: 15px;
+
+    .resCard {
+        flex: 1;
+        background-color: rgba(0,0,0,0.4);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+
+        p {
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: white;
+            font-family: "Titan One";
+            font-size: 36px;
+            font-weight: 100;
+        }
+    }
+}
+
+#dashTabla {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead tr {
+            background-color: rgba(255,255,255,0.05);
+
+            th {
+                color: rgba(255,255,255,0.6);
+                font-size: 13px;
+                letter-spacing: 1px;
+                padding: 15px 20px;
+                text-align: left;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+        }
+
+        tbody tr {
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: background-color 0.2s ease;
+
+            td {
+                color: white;
+                font-size: 14px;
+                padding: 15px 20px;
+            }
+        }
+
+        tbody tr:hover {
+            background-color: rgba(255,255,255,0.04);
+        }
+
+        #sinDatos td {
+            text-align: center;
+            color: rgba(255,255,255,0.3);
+            padding: 40px;
+        }
+    }
+}

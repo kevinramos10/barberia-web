@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+/*Arvo*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginContenido {
+
+    background-color: rgba(66, 59, 59, 0.6);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 40px;
+    padding-bottom: 0%;
+    width: 100%;
+    max-width: 400px;
+}
+
+#loginTitulo {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: "Titan One";
+        color: white;
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-family: "Cinzel";
+        color: rgba(255,255,255,0.5);
+        font-size: 12px;
+    }
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .loginGrupo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        label {
+            font-family: "Cinzel";
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        input {
+            background-color: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 12px 15px;
+            color: white;
+            font-family: "Arvo";
+            font-size: 14px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input:focus {
+            border-color: rgba(255,255,255,0.6);
+        }
+    }
+
+    #btnLogin {
+        margin-top: 10px;
+        padding: 15px;
+        background-color: transparent;
+        color: white;
+        font-family: "Titan One";
+        font-size: 18px;
+        border: 2px solid white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #btnLogin:hover {
+        background-color: white;
+        color: #1a1a2e;
+    }
+}
+
+#regresar{
+    color: rgba(255,255,255,0.7);
+    display: block;
+    text-decoration: none;
+    font-family: "Cinzel";
+    font-size: 14px;
+    padding: 20px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: end;
+    margin-top: 0px ;
+}
+
+#regresar:hover {
+    color: white;
+}
